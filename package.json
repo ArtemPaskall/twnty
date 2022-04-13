@@ -1,17 +1,15 @@
 {
-  "name": "twnty",
-  "homepage": "https://github.com/ArtemPaskall/twnty",
+  "name": "gulp-boilerplate",
   "version": "1.0.0",
   "description": "Frontend boilerplate based on gulp",
   "main": "index.js",
   "scripts": {
-   "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "init": "mate-scripts init",
     "start": "mate-scripts start",
     "lint": "mate-scripts lint",
     "test:only": "mate-scripts test",
     "build": "mate-scripts build",
+    "deploy": "mate-scripts deploy",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only"
@@ -29,7 +27,7 @@
     "colors": "^1.3.3",
     "eslint": "^5.16.0",
     "eslint-plugin-node": "^9.0.1",
-    "gh-pages": "^2.0.0",
+    "gh-pages": "2.0.0",
     "gulp-htmllint": "0.0.16",
     "node-sass": "^4.14.1",
     "parcel": "^1.12.4",
