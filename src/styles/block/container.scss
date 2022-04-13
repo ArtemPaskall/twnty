@@ -1,0 +1,11 @@
+.container {
+  padding: 0 30px;
+
+  @include iPad {
+    padding: 0 40px;
+  }
+
+  @include Desk {
+    padding: 0 60px;
+  }
+}

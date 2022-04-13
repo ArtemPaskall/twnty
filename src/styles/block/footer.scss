@@ -1,0 +1,62 @@
+.footer {
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include iPad {
+      flex-direction: row;
+      align-items: center;
+      padding: 30px 0;
+    }
+  }
+
+  &__logo {
+    padding: 50px 0;
+
+    @include iPad {
+      padding: 0;
+    }
+  }
+
+  &__link-block {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+
+    @include iPad {
+      padding: 0;
+      flex-direction: row;
+      margin-left: 300px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $textColor;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    @include iPad {
+      padding-right: 20px;
+      font-weight: normal;
+      padding-bottom: 0;
+
+    }
+  }
+
+  &__copyright {
+    padding-bottom: 50px;
+    font-size: 16px;
+
+    @include iPad {
+      padding: 0;
+    }
+  }
+}

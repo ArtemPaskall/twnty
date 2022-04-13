@@ -1,0 +1,17 @@
+.link {
+  width: fit-content;
+  &::after {
+    content: "";
+    opacity: 0;
+    display: block;
+    height: 1px;
+    background-color: $textColor;
+
+    margin-top: 10px;
+    transition: all 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}

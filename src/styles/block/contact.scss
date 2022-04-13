@@ -1,0 +1,177 @@
+.contact {
+
+  &__wrap {
+
+    @include iPad {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 40px 0;
+    }
+
+    @include Desk {
+
+      padding: 60px 0;
+    }
+  }
+
+  &__left-side {
+    @include iPad {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &__header {
+    padding: 30px 0;
+    font-size: 22px;
+
+    @include iPad {
+      padding: 0;
+      font-size: 42px;
+    }
+  }
+
+  &__adress {
+    font-size: 16px;
+    padding-bottom: 20px;
+    max-width: 210px;
+  }
+
+  &__phone {
+    font-size: 16px;
+  }
+
+  &__email {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+
+    @include iPad {
+      padding-bottom: 15px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    text-decoration: none;
+    color: $textColor;
+    padding-right: 10px;
+  }
+
+  &__wrap-input {
+
+    @include Desk {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  }
+
+  &__input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: $textColor;
+    border: 0;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    font-family: TTNorms, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+    &::placeholder {
+      font-family: TTNorms, sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+
+  &__textarea {
+    display: block;
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    background-color: $textColor;
+    border: 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+
+    @include Desk {
+      height: 300px;
+    }
+
+    font-family: TTNorms, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+
+    &::placeholder {
+      font-family: TTNorms, sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__wrap-submit {
+    @include Desk {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__wrap-button {
+    display: flex;
+    padding: 10px 10px 10px 0;
+    align-items: center;
+  }
+
+  &__checked {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background-color: $textColor;
+    margin-right: 10px;
+
+    &:focus {
+      background-image: url(../images/galochka.png);
+      background-position: center;
+      background-size: contain;
+    }
+
+    &--text {
+      font-size: 12px;
+      max-width: 250px;
+    }
+  }
+
+  &__submit {
+    border: 0;
+    background-color: $backgroundColor;
+    cursor: pointer;
+
+    font-family: TTNorms, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: $textColor;
+    padding: 15px 15px 15px 0;
+    margin-bottom: 70px;
+
+    @include iPad {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.page {
+  &__body {
+    font-family: TTNorms, sans-serif;
+    font-size: 24px;
+    color: $textColor;
+    background-color: $backgroundColor;
+  }
+
+  &__line {
+    background-color: $textColor;
+    height: 2px;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+
+    &:target {
+      transform: translateY(0%);
+    }
+  }
+
+  &__body--with-menu {
+    overflow: hidden;
+  }
+
+}

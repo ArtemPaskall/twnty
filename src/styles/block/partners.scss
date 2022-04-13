@@ -1,0 +1,108 @@
+.partners {
+  background-color: $backgroundColorYellow;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+
+  &__discription {
+    color: $backgroundColor;
+    font-size: 26px;
+    font-weight: normal;
+    padding: 40px 0;
+    text-align: center;
+
+    @include iPad {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 0;
+      font-size: 32px;
+    }
+
+    @include Desk {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 0;
+      font-size: 32px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 40px;
+
+    @include iPad {
+      grid-template-columns: repeat(3, 200px);
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-bottom: 60px;
+      gap: 50px;
+    }
+
+    @include Desk {
+      grid-template-columns: repeat(6, 200px);
+      margin: 0 auto;
+      padding-bottom: 90px;
+      gap: 20px;
+    }
+  }
+
+  &__item {
+
+    position: relative;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+      z-index: -1;
+    }
+
+    &--1 {
+      max-height: 100px;
+
+      @include Desk {
+        max-height: 120px;
+      }
+    }
+
+    &--2 {
+      max-height: 100px;
+
+      @include Desk {
+        max-height: 120px;
+      }
+    }
+
+    &--3 {
+      max-height: 120px;
+    }
+
+    &--4 {
+      max-height: 100px;
+    }
+
+    &--5 {
+      max-height: 100px;
+    }
+
+    &--6 {
+      max-height: 40px;
+    }
+
+    &-img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      object-fit: contain;
+      object-position: center;
+
+    }
+  }
+}
