@@ -1,6 +1,6 @@
 # TWNTY project
 
- [TWNTY](https://artempaskall.github.io/KindHeart/).
+ [TWNTY](https://artempaskall.github.io/twnty/).
 
 ## Technologies that have been applied
 
