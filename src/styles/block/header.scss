@@ -138,6 +138,7 @@
     background-image: url(../images/arrowdown.svg);
     position: relative;
     right: 10px;
+    transition: transform 0.3s;
 
     @include iPad {
       width: 35px;
@@ -150,6 +151,10 @@
       position: absolute;
       right: 0;
       bottom: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.3);
     }
   }
 }
